@@ -1,5 +1,8 @@
 import { useState, useRef } from "react";
 import { Upload, X, Search } from "lucide-react";
+import pic1 from "@/assets/pic1.png";
+import pic2 from "@/assets/pic2.png";
+import pic3 from "@/assets/pic3.png";
 
 interface Photo {
   id: string;
@@ -18,23 +21,36 @@ export default function PhotoAlbum() {
   const [photos, setPhotos] = useState<Photo[]>([
     {
       id: "1",
-      src: "/assets/pic1.png",
+      src: pic1,
       tagsCount: 5,
       date: "Oct 31, 2024",
     },
     {
       id: "2",
-      src: "/assets/pic2.png",
+      src: pic2,
       tagsCount: 3,
       date: "Oct 31, 2024",
     },
     {
       id: "3",
-      src: "/assets/pic3.png", // or pic2.png — up to you
+      src: pic3,
       tagsCount: 7,
       date: "Oct 30, 2024",
     },
   ]);
+
+  return (
+    <div>
+      {photos.map((photo) => (
+        <img
+          key={photo.id}
+          src={photo.src}
+          alt={`Photo ${photo.id}`}
+          className="w-full h-auto"
+        />
+      ))}
+    </div>
+  );
 
 
   const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null);

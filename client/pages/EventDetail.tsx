@@ -50,7 +50,7 @@ export default function EventDetail() {
         <img
           src={event.image}
           alt={event.title}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover rotate-90"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
       </div>
@@ -112,7 +112,7 @@ export default function EventDetail() {
 
       {/* Fixed Bottom CTA */}
       <div className="fixed bottom-20 md:bottom-6 left-0 right-0 px-4 pb-4 bg-gradient-to-t from-background via-background to-transparent">
-        <button className="w-full py-4 rounded-full bg-primary text-primary-foreground font-bold text-lg hover:opacity-90 transition">
+        <button className="w-full py-4 rounded-full bg-primary text-primary-foreground font-bold text-lg hover:opacity-100 transition">
           Get Tickets
         </button>
       </div>
