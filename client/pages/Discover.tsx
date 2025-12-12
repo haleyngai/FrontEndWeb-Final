@@ -73,7 +73,7 @@ export default function Discover() {
       title: "QUINTINO",
       venue: "Nebula New York",
       date: "Fri, Oct 31, 11:00 PM - 4:00 AM",
-      image: "/assets/eventpic.png",
+      image:"https://api.builder.io/api/v1/image/assets/TEMP/fda214a63b06324aa4b5ca3a42d7d1da81dc5caf?width=507",
     },
   ];
 

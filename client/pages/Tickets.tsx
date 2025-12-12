@@ -21,7 +21,7 @@ export default function Tickets() {
       venue: "City Winery",
       date: "Oct 31, 2024",
       image:
-        "https://source.unsplash.com/random/800x600/?concert,lights",
+      "https://api.builder.io/api/v1/image/assets/TEMP/9136ee0a4bee7f5d0458d81825e37aca673151bd?width=88",
       status: "upcoming",
     },
     {
@@ -30,7 +30,7 @@ export default function Tickets() {
       venue: "Nebula New York",
       date: "Oct 31, 2024",
       image:
-        "https://source.unsplash.com/random/800x600/?club,nightlife",
+      "https://api.builder.io/api/v1/image/assets/TEMP/9136ee0a4bee7f5d0458d81825e37aca673151bd?width=88",
       status: "upcoming",
     },
     {
